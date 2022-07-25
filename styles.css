@@ -4,68 +4,72 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
+    list-style: none;
 }
     /* header */
 .navigation{
-    margin: 0 2rem;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+    max-height: 5rem;
 }
 
 .logo{
-    margin: -1rem 0;
+    margin: -1rem 0 -1rem 0;
     width: 35%;
 }
 
-.menu li{
-    list-style: none;
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%;
+}
+
+.menu-icon{
+    padding: 1.5rem 0 0 0.7rem;
 }
 
 .sub-menu{
-    display: none;
     position: absolute;
-    font-size: 1rem;
-    width: 100%;
+    display: none;
 }
 
-.menu:hover .sub-menu{
+.sub-menu a{
+    color: #ffffff ;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.menu-icon:hover .sub-menu{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
-
-/* .menu a{
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.menu a:hover{
-    color: #000000 ;
-} */
 
  /* explore*/
 .explore{
- 
-}
-
-.explore img{
-    width: 100%;
+  background-image: url(./images/main\ image\ mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  max-height: 30.7rem;
 }
 
 .exptext{
-    margin-left: 0.7rem;
-    width: 55vw;
-    position: absolute;
-    margin-top: -18rem;
+   padding: 12rem 0 2.6rem 0;
+   width: 14em;
+   margin-left: 1rem;
 }
 
 .exptext h2{
-    
+    color: #384e96;
     font-size: 2rem;
     font-weight: 900;
 }
 
 .exptext p{
+    color: #ffffff;
     padding-top: 1.5rem;
     font-size: 1.5rem;
     font-weight: 500;
@@ -78,7 +82,7 @@
     color: #ffffff;
     margin-top: 2.8rem;
     font-weight: bold;
-    padding: 0.3rem 0.8rem;
+    padding: 0.3rem 1.3rem;
     margin-left: 0.5rem;
     border: none;
     border-radius: 1rem;
@@ -112,7 +116,7 @@
     line-height: 3rem;
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin: 0 1.5rem 1rem 1.5rem;
 }
 
 .form p{
@@ -140,7 +144,6 @@
 
 /* destination */
 .destination{
-   width: 100%;
    background-color: #e8f6f9;
    display: flex;
    flex-direction: column;
@@ -148,6 +151,7 @@
 }
 
 .destination h3{
+    width: 90%;
     margin: 2.2rem 0 1rem 0;
     font-size: 2rem;
     font-weight: 700;
@@ -213,15 +217,15 @@
 
 /* travel updates */
 .travel{
- 
+
 }
 
 .travel h3{
     color: #384e96;
-    margin: 1rem 0;
+    margin: 2rem 0;
     text-align: center;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .update{
@@ -231,7 +235,7 @@
 
 .date{
     color: #ffffff;
-    width: 90%;
+    width: 60%;
     position: absolute;
     text-align: start;
     font-size: 1.2rem;
@@ -242,10 +246,10 @@
 
 .tut{
     color: #ffffff;
-    width: 90%;
+    width: 75%;
     position: absolute;
     text-align: start;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold; 
     margin-top: -15rem;
     margin-left: 1rem;
@@ -254,64 +258,97 @@
 .likes{
     display: flex;
     justify-content: center;
-    width: 92%;
+    width: 85%;
     position: absolute;
     margin-top: -4rem;
     color: #ffffff;
     font-size: 1.5rem;
-    padding: 0 2rem;
-}
-
-.likes img{
-    /* padding-top: -0.5rem; */
+    padding: 0 2rem 0 1rem;
 }
 
 .number{
+    margin-left: 0.5rem;
     flex-grow: 5;
 }
 
 /* lounge */
 .lounge{
-
+    text-align: center;
+    padding-bottom: 3rem;
 }
 
 .lounge h3{
-
+    color: #384e96;
+    margin: 1rem 0 3rem 0;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 .img-box{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
 }
 
 .round-img{
-
+    width: 60%;
 }
 
 .img-box h4{
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 1rem;
+    color: #1951A7;
+}
 
+.country{
+    font-weight: 300;
+    color: #1951A7;
+    opacity: 0.5;
 }
 
 .img-box p{
-
+    width: 68%;
+    font-size: 1.25rem;
 }
 
 /* footer */
+.icons{
+    background-color: #5dbfdd28;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+}
+
 .icon{
 
 }
 
 .icon-box{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .round-icon{
-
+    background-color: #ffffff;
+    box-shadow: 0 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
+    margin: 2rem 0 1rem 0;
+    width: 9.1rem;
+    height: 8rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon-box h4{
-
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    font-weight: 100rem;
 }
 
 .icon-box p{
-    
+    width: 90%;
+    text-align: center;
 }
