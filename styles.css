@@ -1,0 +1,317 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+    /* header */
+.navigation{
+    margin: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin: -1rem 0;
+    width: 35%;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.sub-menu{
+    display: none;
+    position: absolute;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.menu:hover .sub-menu{
+    display: flex;
+    flex-direction: column;
+}
+
+/* .menu a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color: #000000 ;
+} */
+
+ /* explore*/
+.explore{
+ 
+}
+
+.explore img{
+    width: 100%;
+}
+
+.exptext{
+    margin-left: 0.7rem;
+    width: 55vw;
+    position: absolute;
+    margin-top: -18rem;
+}
+
+.exptext h2{
+    
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.exptext p{
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.btn-1{
+    cursor: pointer;
+    background-color: #384e96;
+    color: #ffffff;
+    margin-top: 2.8rem;
+    font-weight: bold;
+    padding: 0.3rem 0.8rem;
+    margin-left: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+}
+
+.btn-1:hover{
+    background-color: #ffffff;
+    color: #384e96;
+}
+
+/* Main */
+.container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+/* form */
+.form{
+    margin-top: 1rem;
+    text-align: center;
+    color: #384e96;
+}
+
+.map{
+    margin-bottom: 1rem; 
+}
+
+.form h3{
+    line-height: 3rem;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.form p{
+    font-size: 1.3rem;
+    font-weight: 550;
+}
+
+.btn-2{
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 1rem;
+    color: #ffffff;
+    background-color: #384e96; 
+}
+
+.btn-2:hover{
+    background-color: #dfdfdf;
+    color: #384e96;
+}
+
+/* destination */
+.destination{
+   width: 100%;
+   background-color: #e8f6f9;
+   display: flex;
+   flex-direction: column;
+   align-items: center; 
+}
+
+.destination h3{
+    margin: 2.2rem 0 1rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: #384e96; 
+}
+
+.txt{
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 90%;
+    text-align: center;
+    line-height: 2rem;
+    color: #384e96;
+    padding-bottom: 1.5rem; 
+}
+
+.cities{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.city{
+    width: 85%;
+}
+
+.img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.imgh{
+    min-height: 22.13rem;
+}
+
+.imgtxt{
+  color: #ffffff;
+  position: absolute;
+  margin: -5rem 0 0 1.5rem;
+  font-weight: bold;
+  font-size: 2rem;   
+
+}
+
+.btn-3{
+    cursor: pointer;
+    margin: 2rem 0;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 1rem;
+    color: #ffffff;
+    background-color: #384e96; 
+}
+
+.btn-3:hover{
+    background-color: #dfdfdf;
+    color: #384e96; 
+}
+
+
+/* travel updates */
+.travel{
+ 
+}
+
+.travel h3{
+    color: #384e96;
+    margin: 1rem 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.update{
+    width: 90%;
+    margin: 0 auto; 
+}
+
+.date{
+    color: #ffffff;
+    width: 90%;
+    position: absolute;
+    text-align: start;
+    font-size: 1.2rem;
+    font-weight: 500; 
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+
+.tut{
+    color: #ffffff;
+    width: 90%;
+    position: absolute;
+    text-align: start;
+    font-size: 2rem;
+    font-weight: bold; 
+    margin-top: -15rem;
+    margin-left: 1rem;
+}
+
+.likes{
+    display: flex;
+    justify-content: center;
+    width: 92%;
+    position: absolute;
+    margin-top: -4rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 0 2rem;
+}
+
+.likes img{
+    /* padding-top: -0.5rem; */
+}
+
+.number{
+    flex-grow: 5;
+}
+
+/* lounge */
+.lounge{
+
+}
+
+.lounge h3{
+
+}
+
+.img-box{
+
+}
+
+.round-img{
+
+}
+
+.img-box h4{
+
+}
+
+.img-box p{
+
+}
+
+/* footer */
+.icon{
+
+}
+
+.icon-box{
+
+}
+
+.round-icon{
+
+}
+
+.icon-box h4{
+
+}
+
+.icon-box p{
+    
+}
