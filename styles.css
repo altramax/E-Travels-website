@@ -12,12 +12,32 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    max-height: 5rem;
+    min-height: 4rem;
+}
+
+
+.logo-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: end;
+    padding-right: 1rem;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.logo-link span{
+    color: #30a5ca;
+    padding-top: 0.2rem;
+    font-family: 'Uchen', serif;
 }
 
 .logo{
-    margin: -0.5rem 0 -0.5rem 1rem;
-    width: 30%;
+    width: 50%;
+    margin-right: -0.6rem;
+   
 }
 
 .menu{
@@ -437,7 +457,6 @@
  /* tour page  */
 
  .tour{
-    background-color: #384e9605;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -458,7 +477,6 @@
    /* escape pages */
  
    .offers{
-    background-color: #384e9609;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -488,6 +506,7 @@
     font-size: 1.2rem;
     line-height: 1.5rem;
     margin: 1rem 0;
+    color: #1951A7;
  }
 
  .offers p{
@@ -496,6 +515,7 @@
     font-weight: 100;
     line-height: 1.5rem;
     margin-top: 1rem;
+    color: #000000;
  }
 
  .offers ul, .offers ol{
@@ -504,8 +524,10 @@
     font-size: 1rem;
     font-weight: 100;
     padding: 0.5rem;
+    color: #000000;
  }
 
    li{
     margin-bottom: 0.8rem;
+    color: #000000;
  }
