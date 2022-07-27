@@ -396,3 +396,116 @@
     padding: 2.5rem 0;
     font-size: 2.25rem;
  }
+
+.location{
+    width: 100%;
+}
+
+.places{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+ .location h2{
+    width: 100%;
+    background-color: #384e9618;
+    color: #1951A7;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem 0;
+ }
+
+ .places h3{
+    padding: 2rem 0 1.5rem 0;
+    color: #1951A7;
+    font-size: 1.5rem;
+ }
+
+ .places p{
+    width: 90%;
+    line-height: 1.5rem;
+ }
+
+ .places img{
+    margin: 2rem 0;
+    width: 90%;
+ }
+
+ /* tour page  */
+
+ .tour{
+    background-color: #384e9605;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2rem auto;
+ }
+
+ .escape{
+     width: 90%;
+     margin: 1rem;
+ }
+
+ .t-l{
+    margin: 0 auto;
+    width: 100%;
+ }
+
+   /* escape pages */
+ 
+   .offers{
+    background-color: #384e9609;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2rem;
+   }
+  
+   .zanzibar, .dubai, .maldives{
+    width: 90%;
+  }
+ 
+  .img-es{
+     width: 100%;
+  }
+
+ .offers h1{
+    width: 90%;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #1951A7;
+    padding: 2rem 0;
+    text-align: center;
+ }
+
+ .offers h3{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin: 1rem 0;
+ }
+
+ .offers p{
+    width: 90%;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+ }
+
+ .offers ul, .offers ol{
+    text-align: start;
+    width: 90%;
+    font-size: 1rem;
+    font-weight: 100;
+    padding: 0.5rem;
+ }
+
+   li{
+    margin-bottom: 0.8rem;
+ }
