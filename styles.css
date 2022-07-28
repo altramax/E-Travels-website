@@ -286,7 +286,7 @@
     max-height: 30.1rem;
 }
 
-.date{
+.date{                                                           
     color: #ffffff;
     text-align: start;
     font-size: 1.5rem;
@@ -461,12 +461,10 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 2rem auto;
  }
 
  .escape{
      width: 90%;
-     margin: 1rem;
  }
 
  .tour-img{
@@ -482,7 +480,7 @@
     flex-direction: column;
     align-items: center;
     text-align: start;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
    }
   
    .escape-dubai{
@@ -507,43 +505,76 @@
  }
 
  .offers-heading--sub{
-    width: 85%;
+    width: 100%;
     font-size: 1.2rem;
     line-height: 1.5rem;
     margin: 1rem 0;
-   text-align: start;
+    text-align: center;
  }
 
  .offers-text{
     width: 90%;
     font-size: 1rem;
-    font-weight: 100;
+    font-weight: 400;
     line-height: 1.5rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     color: #000000;
  }
 
  .offers-list{
     text-align: start;
     width: 90%;
+    line-height: 1.7rem;
     font-size: 1rem;
     font-weight: 100;
     padding: 0.5rem;
     color: #000000;
  }
 
-   li{
-    
-    color: #000000;
+ .blogs{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+    margin: 0 auto;
  }
 
- .blogs{
+ .blog{
+    margin-top: 2.5rem;
+    text-align: center;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* padding-bottom: 2rem; */
  }
 
- .bloghead{
-    padding: 2.5rem auto;
+ .text{
+    width: 100%;
+    text-align: center;
  }
+
+ .blog-page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+    width: 95%;
+    margin: 0 auto;
+ }
+
+ /* traverler's lounge  */
+ 
+  .lounge-page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .lounge-img{
+    padding: 1rem;
+  }
