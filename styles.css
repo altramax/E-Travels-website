@@ -6,38 +6,36 @@
     text-decoration: none;
     list-style: none;
 }
+
     /* header */
 .navigation{
+    padding-top: 0.4rem;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    min-height: 4rem;
+    max-height: 4.2rem;
 }
-
 
 .logo-link{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: end;
-    padding-right: 1rem;
+    align-items: flex-end;
     font-weight: 100;
     font-style: italic;
     font-size: 0.8rem;
-}
-
-.logo-link span{
-    color: #30a5ca;
-    padding-top: 0.2rem;
-    font-family: 'Uchen', serif;
+    margin-right: 2rem;
 }
 
 .logo{
-    width: 50%;
+    width: 40%;
     margin-right: -0.6rem;
-   
+}
+
+.logo-text{
+    color: #30a5ca;
+    padding-top: 0.2rem;
+    font-family: 'Uchen', serif;
 }
 
 .menu{
@@ -48,7 +46,7 @@
 }
 
 .menu-icon{
-    padding: 1.5rem 0 0 0.7rem;
+    padding: 1.5rem 0 1rem 0.7rem;
     cursor: pointer;
 }
 
@@ -56,17 +54,16 @@
     position: absolute;
     display: none;
     background-color: #ffffff;
-    padding: 0 1rem 1rem 2rem;
-    margin-left: -2rem;
+    padding: 0 1rem 0 2rem;
+    margin: -0.5rem 0.8rem 0 -1.5rem;
     border-radius: 0.5rem;
-}
-
-.sub-menu a{
-    color: #384e96 ;
     font-size: 1.2rem;
     font-weight: 300;
     line-height: 2rem;
-    
+}
+
+.sub-menu--link{
+    color: #1951A7;
 }
 
 .menu-icon:hover .sub-menu{
@@ -83,37 +80,40 @@
   max-height: 30.7rem;
 }
 
-.exptext{
+.explore-texts{
    padding: 10rem 0 2.6rem 0;
    width: 13em;
    margin-left: 1rem;
 }
 
-.exptext h2{
+.explore-heading{
     color: #384e96;
     font-size: 2rem;
     font-weight: 900;
 }
 
-.exptext p{
+.explore-text{
     color: #ffffff;
     padding-top: 1.5rem;
     font-size: 1.5rem;
     font-weight: 500;
     font-style: italic;
+    margin-bottom: 2rem;
 }
 
 .btn-1{
+    display: block;
     cursor: pointer;
     background-color: #384e96;
     color: #ffffff;
-    margin-top: 2.8rem;
     font-weight: bold;
-    padding: 0.3rem 1.3rem;
-    margin-left: 0.5rem;
+    width: 9rem;
+    padding: 0.3rem 0rem;
+    margin: 0 0 0 0.5rem;
     border: none;
     border-radius: 1rem;
     font-size: 0.9rem;
+    text-align: center;
 }
 
 .btn-1:hover{
@@ -121,7 +121,7 @@
     color: #384e96;
 }
 
-/* Main */
+/* main container */
 .container{
    display: flex;
    flex-direction: column;
@@ -140,23 +140,25 @@
     margin-bottom: 1rem; 
 }
 
-.form h3{
+.form-heading{
     line-height: 3rem;
     font-size: 2rem;
     font-weight: 700;
     margin: 1rem 1.5rem 1rem 1.5rem;
 }
 
-.form p{
+.form-text{
     font-size: 1.3rem;
     font-weight: 550;
 }
 
 .btn-2{
+    width: 10rem;
+    display: block;
     cursor: pointer;
-    margin: 2rem 0;
+    margin: 2rem auto;
     font-size: 1rem;
-    padding: 0.8rem 2rem;
+    padding: 0.8rem 0;
     font-weight: bold;
     border: none;
     border-radius: 1rem;
@@ -177,7 +179,7 @@
    align-items: center; 
 }
 
-.destination h3{
+.destination-heading{
     width: 90%;
     margin: 2.2rem 0 1rem 0;
     font-size: 2rem;
@@ -186,7 +188,7 @@
     color: #384e96; 
 }
 
-.txt{
+.destination-text{
     font-size: 1.2rem;
     font-weight: 600;
     width: 90%;
@@ -221,14 +223,14 @@
   margin: -5rem 0 0 1.5rem;
   font-weight: bold;
   font-size: 2rem;   
-
 }
 
 .btn-3{
+    display: block;
     cursor: pointer;
     margin: 2rem 0;
     font-size: 1rem;
-    padding: 0.5rem 2rem;
+    padding: 0.7rem 2.5rem;
     font-weight: bold;
     border: none;
     border-radius: 1rem;
@@ -241,14 +243,14 @@
     color: #384e96; 
 }
 
-
 /* travel updates */
+
 .travel{
     width: 80%;
     margin-bottom: 1rem;
 }
 
-.travel h3{
+.travel-heading{
     color: #384e96;
     margin: 2rem 0;
     text-align: center;
@@ -256,7 +258,7 @@
     font-size: 2rem;
 }
 
-.t-u-1{
+.travel-update--1{
     margin: 1rem auto;
     width: 100%;
     background-image: url(./images/1st\ T.U.png);
@@ -266,7 +268,7 @@
  
 }
 
-.t-u-2{
+.travel-update--2{
     margin: 1rem auto;
     width: 100%;
     background-image: url(./images/2nd\ T.U.png);
@@ -275,7 +277,7 @@
     max-height: 30.1rem;
 }
 
-.t-u-3{
+.travel-update--3{
     margin: 1rem auto;
     width: 100%;
     background-image: url(./images/3rd\ T.U.png);
@@ -292,7 +294,7 @@
     padding: 3rem 0 4rem 1rem;
 }
 
-.tut{
+.travel-update--text{
     color: #ffffff;
     text-align: start;
     font-size: 2rem;
@@ -319,7 +321,7 @@
     padding-bottom: 3rem;
 }
 
-.lounge h3{
+.lounge-heading{
     color: #384e96;
     margin: 1rem 0 3rem 0;
     font-weight: bold;
@@ -337,7 +339,7 @@
     width: 60%;
 }
 
-.img-box h4{
+.img-box--name{
     font-weight: bold;
     font-size: 2rem;
     margin: 1rem;
@@ -350,7 +352,7 @@
     opacity: 0.5;
 }
 
-.img-box p{
+.img-box--text{
     font-weight: 275rem;
     width: 68%;
     font-size: 1.25rem;
@@ -362,10 +364,6 @@
     background-color: #5dbfdd28;
     margin-top: 1rem;
     padding-bottom: 2rem;
-}
-
-.icon{
-
 }
 
 .icon-box{
@@ -386,14 +384,14 @@
     align-items: center;
 }
 
-.icon-box h4{
+.icon-heading{
     color: #1951A7;
     margin: 1rem 0;
     font-size: 1.3rem;
     font-weight: 100rem;
 }
 
-.icon-box p{
+.icon-text{
     color: #000000cb;
     width: 75%;
     font-weight: 500;
@@ -410,7 +408,7 @@
     margin-bottom: 2rem;
  }
 
- .heading h1{
+ .heading-text{
     color: #ffffff;
     text-align: center;
     padding: 2.5rem 0;
@@ -421,14 +419,7 @@
     width: 100%;
 }
 
-.places{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
- .location h2{
+ .location-heading, .blog-head{
     width: 100%;
     background-color: #384e9618;
     color: #1951A7;
@@ -438,18 +429,27 @@
     padding: 2rem 0;
  }
 
- .places h3{
+.places{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+ .places-heading{
+    width: 95%;
     padding: 2rem 0 1.5rem 0;
     color: #1951A7;
     font-size: 1.5rem;
  }
 
- .places p{
+ .places-text{
     width: 90%;
     line-height: 1.5rem;
  }
 
- .places img{
+ .places-img{
     margin: 2rem 0;
     width: 90%;
  }
@@ -469,7 +469,7 @@
      margin: 1rem;
  }
 
- .t-l{
+ .tour-img{
     margin: 0 auto;
     width: 100%;
  }
@@ -481,11 +481,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: start;
     padding-bottom: 2rem;
    }
   
-   .zanzibar, .dubai, .maldives{
+   .escape-dubai{
+    text-align: center;
+   }
+
+   .zanzibar, .dubai, .maldives, .blog{
     width: 90%;
   }
  
@@ -493,23 +497,24 @@
      width: 100%;
   }
 
- .offers h1{
+ .offers-heading{
     width: 90%;
-    font-size: 1.6rem;
+    font-size: 1.6rem; 
     font-weight: bold;
     color: #1951A7;
     padding: 2rem 0;
     text-align: center;
  }
 
- .offers h3{
+ .offers-heading--sub{
+    width: 85%;
     font-size: 1.2rem;
     line-height: 1.5rem;
     margin: 1rem 0;
-    color: #1951A7;
+   text-align: start;
  }
 
- .offers p{
+ .offers-text{
     width: 90%;
     font-size: 1rem;
     font-weight: 100;
@@ -518,7 +523,7 @@
     color: #000000;
  }
 
- .offers ul, .offers ol{
+ .offers-list{
     text-align: start;
     width: 90%;
     font-size: 1rem;
@@ -528,6 +533,17 @@
  }
 
    li{
-    margin-bottom: 0.8rem;
+    
     color: #000000;
+ }
+
+ .blogs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .bloghead{
+    padding: 2.5rem auto;
  }
