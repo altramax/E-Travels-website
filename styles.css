@@ -135,7 +135,7 @@
 
 /* form */
 .form{
-    margin-top: 1rem;
+    margin: 1rem 0;
     text-align: center;
     color: #384e96;
 }
@@ -217,10 +217,7 @@
     width: 100%;
     margin-bottom: 1rem;
     margin-top: 3rem;
-}
-
-.imgh{
-    min-height: 22.13rem;
+    height: 22rem;
 }
 
 .imgtxt{
@@ -272,7 +269,7 @@
     background-image: url(./images/1st\ T.U.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    max-height: 30.1rem;
+    min-height: 22rem;
  
 }
 
@@ -282,7 +279,7 @@
     background-image: url(./images/2nd\ T.U.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    max-height: 30.1rem;
+    min-height: 22rem;
 }
 
 .travel-update--3{
@@ -291,7 +288,7 @@
     background-image: url(./images/3rd\ T.U.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    max-height: 30.1rem;
+    min-height: 22rem;
 }
 
 .date{                                                           
@@ -304,10 +301,10 @@
 
 .travel-update--text{
     color: #ffffff;
-    text-align: center;
+    text-align: start;
     font-size: 1.6rem;
     font-weight: bold; 
-    padding: 3rem 1rem 3rem 1rem;
+    padding: 5rem 1rem 2rem 1rem;
 }
 
 .likes{
@@ -472,7 +469,7 @@
     width: 100%;
  }
 
- .escape{
+ .escape, .escape2{
      width: 90%;
  }
 
@@ -525,7 +522,7 @@
  .offers-text{
     width: 90%;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.5rem;
     margin-top: 0.5rem;
     color: #000000;
@@ -658,7 +655,7 @@
     .explore-texts{
         padding-top: 14rem;
         width: 40rem;
-        margin-left: 2rem;
+        margin-left: 3rem;
     }
     
     .explore-heading{
@@ -698,12 +695,9 @@
         margin: 0 auto;
      }
 
-     .imgh{
-        min-height:1rem;
-     }
 
      .img{
-        height: 20rem;
+        width: 100%;
         margin: 4rem 0 0 0;
      }
 
@@ -726,9 +720,7 @@
      }
 
      .travel-update--1, .travel-update--2, .travel-update--3 {
-        width: 70%;
-        height: 22rem;
-        max-height: none;
+         min-height: 20rem;
      }
 
      .date{
@@ -738,7 +730,6 @@
 
      .travel-update--text{
         font-size: 1.4rem;
-        padding-bottom: 2rem;
      }
 
      .likes{
@@ -780,6 +771,7 @@
 
     .location-heading{
         margin-top: 5rem;
+        font-size: 3rem;
     }
 
     .escape{
@@ -795,15 +787,267 @@
         margin: 4.2rem auto;
       }
       
- .text-1{
-    margin-top: 2rem;
- }
+    .text-1{
+        margin-top: 2rem;
+    }
 
       .lounge-page{
         width: 80%;
       }
   }
 
- @media screen and (min-width:1120px) {
+ @media screen and (min-width:1280px) {
+
+   .menu{
+    width: 60%;
+    align-items: flex-start;
+   }
+
+   .sub-menu--link{
+    margin-left: 3rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+   }
+
+   .sub-menu--link:hover{
+    font-weight: bold;
+    font-size: 1.5rem;
+   }
+
+    .explore-texts{
+      width: 75%;
+      padding-top: 10rem;
+    }
+
+    .explore-heading{
+        font-size: 3rem;
+    }
+
+    .explore-text{
+        font-size: 2rem;
+    }
+
+   .btn-1{
+    margin: 5rem 0 0 5rem;
+    font-size: 1.5rem;
+    width: 14rem;
+    border-radius: 2rem;
+   }
+
+   .form{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+   }
+
+   .form-main--text{
+    width: 30%;
+    text-align: start;
+   }
+
+   .form-map{
+   width: 50%;
+   }
+
+   .map{
+    width: 100%;
+    height: 100%;
+   }
+
+   .btn-2{
+    width: 10.5rem;
+    margin: 2rem 0 2rem 0;
+    padding: 0.8rem 2.1rem;
+    border-radius: 0;
+   }
+
+   .form-heading{
+    width: 16rem;
+    margin: 1rem 1.5rem 1rem 0;
+   }
+
+   .destination{
+    width: 100%;
+   }
+
+   .destination-heading{
+    font-size: 2.5rem;
+   }
+
+   .destination-text{
+    font-size: 1.5rem;
+   }
+
+   .cities{
+    flex-wrap: nowrap;
+ }
+
+ .btn-3{
+    border-radius: 0;
+    margin: 2rem 0 2rem 0;
+    font-size: 1.4rem;
+    padding: 0.5rem 2.5rem;
+ }
+ .travel-heading{
+    font-size: 2.5rem;
+ }
+
+ .updates{
+    gap: 2rem;
+    justify-content: center;
+ }
+
+ .travel-update--1, .travel-update--2, .travel-update--3 {
+    width: 30%;
+    margin: 2rem 0;
+    min-height: 25rem;
+ }
+
+ .travel-update--text{
+    font-size: 1.8rem;
+    padding: 5rem 1rem 3rem 1rem;
+}
+
+.likes{
+    padding: 2rem 3rem 2rem 2rem;
     
+}
+
+.lounge-heading{
+ font-size: 2.5rem;
+}
+
+.travelers-lounge{
+    flex-wrap: nowrap;
+}
+
+.icons{
+    flex-wrap: nowrap;
+}
+
+.round-icon{
+    width: 8.1rem;
+    height: 7rem;
+}
+
+.heading-text{
+    font-size: 4.2rem;
+    padding: 2.7rem;
+}
+
+.cities-desktop{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.city-desktop{
+    width: 30%;
+}
+
+.places{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+ .places-heading{
+    font-size: 2.5rem;
+ }
+
+ .places-text{
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+ }
+
+ .places-img{
+    margin: 2rem 0;
+    width: 90%;
+ }
+
+ .zanzibar, .dubai, .maldives, .blog{
+    width: 90%;
+  }
+
+  .escape2{
+    display: flex;
+    align-items: center;
+  }
+
+  .offers-heading{
+    font-size: 3rem;
+ }
+
+ .offers-heading--sub{
+    font-size: 1.8rem;
+    line-height: 1.7rem;
+    color: #1951A7;
+ }
+
+ .offers-text, .offers-list{
+    font-size: 1.2rem;
+ }
+
+ .blog{
+    width: 80% ;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid #000000;
+    padding-bottom: 0;
+  }
+
+  .text-2{
+    text-align: start;
+  }
+  .blog-text{
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .blog-img{
+    width: 50%;
+    margin-bottom: -3.5px;
+  }
+
+  .desktop-img{
+    width: 70%;
+    height: 20%;
+  }
+
+  .blog-page{
+    width: 90%;
+  }
+
+  .text{
+    width: 90%;
+  }
+
+  .lounge-page{
+    margin: 2.5rem auto 3rem auto;
+  }
+
+  .travelers{
+    display: flex;
+  }
+  .trav3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .trav2{
+    width: 60%;
+  }
+
+  .trav3-2{
+   display: flex;
+  }
+
+  .trav1{
+   width: 100%;
+  }
  }
