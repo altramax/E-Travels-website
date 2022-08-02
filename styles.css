@@ -591,7 +591,6 @@
   .lounge-img{
     padding: 1rem;
   }
-
   
   @media screen and (min-width: 768px) {
     .navigation{
@@ -1033,21 +1032,55 @@
 
   .travelers{
     display: flex;
+    margin-bottom: 2rem;
+    gap: 1.5rem;
   }
   .trav3{
+    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 1rem;
   }
   .trav2{
+    width: 40%;
+  }
+
+  .trav2-2{
     width: 60%;
   }
 
   .trav3-2{
    display: flex;
+   justify-content: space-between;
+   /* padding-top: 1rem; */
+   gap: 1.5rem;
   }
 
   .trav1{
-   width: 100%;
+   width: 50%;
+  }
+
+  .trav3-2-1{
+  width: 49%;
+  }
+
+  .trav3-2-2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .travv{
+    width: 50%;
+  }
+
+  .lounge-img{
+    padding: 0;
+  }
+
+  .travv1{
+    padding-top: 2.2rem;
   }
  }
